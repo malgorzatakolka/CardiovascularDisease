@@ -14,13 +14,16 @@ The dataset consists of features based on examinations and patient self-reportin
 We used several approaches to create additional features, such as PCA, KMeans clusters, target mean of the 5 nearest neighbors, and mathematical features (sums, BMI, divisions). Although some features initially showed statistically significant relationships with the target, they introduced more noise and lowered the cross-validated accuracy in the models. Feature selection based on removing multicollinearity and using the Boruta library also lowered the metrics.
 
 In the end, we tuned the hyperparameters of the XGBClassifier on the original dataset, achieving 0.74 accuracy on the test data compared to 0.72 using a base logistic regression classifier. We also set the threshold based on threshold-dependent metrics.
-![Threshold](img/threshold)
+![Threshold](img/threshold.png)
+
 
 After hardcoding the threshold to 0.45, we achieved the following results.
 ![Metrics](img/metrics.png)
 
+
 Using the SHAP library, we identified the most important features:
 ![SHAP Importance](img/shap_importance.png)
+
 
 The graph suggests potential problems with the model, particularly the bias favoring a cluster of patients with associated high-risk features into 'cardio' patients and the rest otherwise. Patients who don't display those features are classified as false negatives. Here is an example of such a patient where the model was sure about not having cardiovascular problems:
 ![Worst Prediction](img/worst_pred.png)
