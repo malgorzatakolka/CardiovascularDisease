@@ -1,0 +1,11 @@
+sweetviz==2.3.1
+df-squeezer==0.0.12
+phik==0.12.4
+Boruta==0.3
+jupyter-black==0.3.4
+shap==0.46.0
+scipy==1.11.4
+numpy==1.25.2
+pandas==2.0.3
+matplotlib==3.7.1
+seaborn==0.13.1
