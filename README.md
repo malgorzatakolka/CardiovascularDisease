@@ -6,18 +6,6 @@ This project aims to classify patients that could potentially have cardiovascula
 1) Create a folder with the path /Colab/Cardiovascular/ on your Google Drive, download and unzip the dataset so it's accessible after mounting the drive through the path /content/drive/MyDrive/Colab/Cardiovascular/cardio_train.csv.
 2) Download the dataset to the runtime storage on Google Colab and assign a new URL as an empty string url="".
 3) Clone the repository, create the virtual environment, install libraries from requirements.txt, and download and unzip the dataset into the cloned repository.
-* Requirements.txt:
-sweetviz==2.3.1
-df-squeezer==0.0.12
-phik==0.12.4
-Boruta==0.3
-jupyter-black==0.3.4
-shap==0.46.0
-scipy==1.11.4
-numpy==1.25.2
-pandas==2.0.3
-matplotlib==3.7.1
-seaborn==0.13.1
 
 ## Dataset
 The dataset consists of features based on examinations and patient self-reporting. There are no missing values. Patients are between 26 and 65 years of age, with an imbalance between genders. The most unclean columns are related to blood pressure. We manually identified issues of wrongly written values and mismatches between systolic and diastolic blood pressure. We also removed outliers within reasonable ranges (domain knowledge expert desirable to confirm how the data was collected and what ranges are actually acceptable).
