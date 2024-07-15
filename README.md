@@ -2,7 +2,7 @@
 
 This project aims to classify patients that could potentially have cardiovascular diseases and not based on the dataset from [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset?resource=download) 
 
-## Ranning the notebook in different ways:
+## Running the notebook in different ways:
 1) Create a folder with the path /Colab/Cardiovascular/ on your Google Drive, download and unzip the dataset so it's accessible after mounting the drive through the path /content/drive/MyDrive/Colab/Cardiovascular/cardio_train.csv.
 2) Download the dataset to the runtime storage on Google Colab and assign a new URL as an empty string url="".
 3) Clone the repository, create the virtual environment, install libraries from requirements.txt, and download and unzip the dataset into the cloned repository.
